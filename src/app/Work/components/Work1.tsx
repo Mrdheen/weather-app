@@ -23,7 +23,7 @@ export default function OurWork() {
         {/* Image Section */}
         <div className="w-full flex justify-center">
           <Image 
-            src="/images.png" // Replace with your image path
+            src="/Images.png" // Replace with your image path
             alt="Community Empowerment"
             width={2096} // Adjust dimensions as needed  
             height={460} // Adjust dimensions as needed

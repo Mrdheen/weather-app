@@ -1,10 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/About/page": "app/About/page.js",
-  "/Blog/page": "app/Blog/page.js",
-  "/Donate/page": "app/Donate/page.js",
-  "/Partners/page": "app/Partners/page.js",
-  "/WCA/page": "app/WCA/page.js",
-  "/Work/page": "app/Work/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/Work/page": "app/Work/page.js"
 }
