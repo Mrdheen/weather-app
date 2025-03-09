@@ -4,7 +4,13 @@ import { XCircle } from "lucide-react"; // Importing the X icon
 
 export default function Home() {
   const [city, setCity] = useState("");
-  const [weather, setWeather] = useState<any>(null);
+  interface WeatherData {
+    name: string;
+    weather: { description: string }[];
+    main: { temp: number; humidity: number };
+  }
+
+  const [weather, setWeather] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(false);
 
   const fetchWeather = async () => {
@@ -17,8 +23,12 @@ export default function Home() {
       const data = await res.json();
       if (data.cod !== 200) throw new Error(data.message);
       setWeather(data);
-    } catch (error: any) {
-      alert(error.message);
+    } catch (error) {
+      if (error instanceof Error) {
+        alert(error.message);
+      } else {
+        alert("An unknown error occurred");
+      }
     } finally {
       setLoading(false);
     }

@@ -373,16 +373,12 @@ img, video {
   justify-content: center;
 }
 
-.rounded-lg {
-  border-radius: .5rem;
-}
-
-.rounded-md {
-  border-radius: .375rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: .5rem;
 }
 
 .border {
