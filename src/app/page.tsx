@@ -76,7 +76,7 @@ export default function Home() {
       <motion.div className="absolute top-4 right-4">
         <motion.button
           onClick={() => setDarkMode(!darkMode)}
-          className="flex items-center bg-gray-200 dark:bg-gray-800 px-4 py-2 rounded-full shadow-md transition"
+          className="flex items-center bg-gray-200 px-4 py-2 rounded-full shadow-md transition"
           whileTap={{ scale: 0.9 }}
         >
           {darkMode ? (
@@ -88,7 +88,7 @@ export default function Home() {
               <Moon className="w-6 h-6 text-gray-800" />
             </motion.span>
           )}
-          <span className="ml-2 text-lg">{darkMode ? "Light Mode" : "Dark Mode"}</span>
+          <span className="ml-2 text-lg text-gray-900">{darkMode ? "Light Mode" : "Dark Mode"}</span>
         </motion.button>
       </motion.div>
 
